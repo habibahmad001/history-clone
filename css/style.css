@@ -10,6 +10,9 @@ body{font-family:Georgia, 'Times New Roman', serif;margin:0;background:var(--bg)
 .main-nav a{color:#333;text-decoration:none}
 .main-nav a.active{font-weight:700}
 .search{margin-left:auto}
+body * {
+    font-family: Lora;
+}
 
 /* Page head */
 .page-head{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
@@ -53,8 +56,8 @@ body{font-family:Georgia, 'Times New Roman', serif;margin:0;background:var(--bg)
 .timeline{position:relative}
 .timeline:before{content:'';position:absolute;left:50%;transform:translateX(-50%);top:0;bottom:0;width:2px;background:#e6e6e6}
 .timeline-item{display:flex;gap:12px;padding:24px 0;position:relative;width:100%}
-.timeline-item.left{justify-content:flex-end;padding-right:14%}
-.timeline-item.right{justify-content:flex-start;padding-left:14%}
+.timeline-item.left{justify-content:flex-end;padding-right:14% !important}
+.timeline-item.right{justify-content:flex-start;padding-left:14% !important}
 .timeline-item .t-year{background:#111;color:#fff;padding:6px 8px;border-radius:4px;max-height: 30px;font-weight:700;min-width:50px;text-align:center}
 .timeline-item .t-content{max-width:240px}
 .timeline-item h4{margin:0;font-size:16px}
