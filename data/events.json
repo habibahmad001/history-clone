@@ -1,0 +1,46 @@
+{
+  "8-21": [
+    {
+      "type": "events",
+      "year": 1877,
+      "title": "Astronomical observation noted",
+      "excerpt": "An observatory recorded a curious celestial object in 1877.",
+      "img": "https://picsum.photos/800/480?random=1"
+    },
+    {
+      "type": "births",
+      "year": 1950,
+      "title": "Famous Composer born",
+      "excerpt": "A notable composer was born on this day.",
+      "img": "https://picsum.photos/800/480?random=2"
+    },
+    {
+      "type": "deaths",
+      "year": 1999,
+      "title": "Statesman passes away",
+      "excerpt": "A statesman of note died on this date.",
+      "img": "https://picsum.photos/800/480?random=3"
+    },
+    {
+      "type": "events",
+      "year": 1969,
+      "title": "Historic Flight",
+      "excerpt": "A milestone flight took place.",
+      "img": "https://picsum.photos/800/480?random=4"
+    },
+    {
+      "type": "events",
+      "year": 1492,
+      "title": "Voyage sets sail",
+      "excerpt": "Ships departed on a historic voyage.",
+      "img": "https://picsum.photos/800/480?random=5"
+    },
+    {
+      "type": "births",
+      "year": 1820,
+      "title": "Poet born",
+      "excerpt": "Birth of a poet whose works inspired future generations.",
+      "img": "https://picsum.photos/800/480?random=6"
+    }
+  ]
+}
