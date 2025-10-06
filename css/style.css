@@ -53,8 +53,8 @@ body{font-family:Georgia, 'Times New Roman', serif;margin:0;background:var(--bg)
 .timeline{position:relative}
 .timeline:before{content:'';position:absolute;left:50%;transform:translateX(-50%);top:0;bottom:0;width:2px;background:#e6e6e6}
 .timeline-item{display:flex;gap:12px;padding:24px 0;position:relative;width:100%}
-.timeline-item.left{justify-content:flex-end;padding-right:40px}
-.timeline-item.right{justify-content:flex-start;padding-left:40px}
+.timeline-item.left{justify-content:flex-end;padding-right:14%}
+.timeline-item.right{justify-content:flex-start;padding-left:14%}
 .timeline-item .t-year{background:#111;color:#fff;padding:6px 8px;border-radius:4px;max-height: 30px;font-weight:700;min-width:50px;text-align:center}
 .timeline-item .t-content{max-width:240px}
 .timeline-item h4{margin:0;font-size:16px}
