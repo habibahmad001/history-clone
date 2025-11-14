@@ -3,43 +3,44 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>History Vault Promo Section</title>
-  <style>
-/* Font import (for modern, clean look similar to History.com) */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+  <title>HerWiki Promo Section</title>
 
-/* General Layout */
+  <!-- Font Imports -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=DM+Sans:wght@400;500;700&family=Instrument+Serif:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+
+  <style>
+/* GENERAL LAYOUT */
 .history-vault-promo {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: linear-gradient(140deg, #979797 5%, #1E1E1E, #000000);
+  background: #000;
   color: #fff;
   border-radius: 20px;
-  padding: 30px 60px 30px 120px; /* increased height spacing */
+  padding: 45px 60px 45px 140px;
   gap: 40px;
-  max-width: 1100px;
-  margin: 80px auto;
+  max-width: 1200px;
+  margin: 120px auto;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
   overflow: visible;
   flex-wrap: wrap;
-  font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
-/* Image section */
+/* LEFT IMAGE */
 .promo-image {
-    position: absolute;
-    left: -65px;
-    z-index: 3;
-    transform: rotate(-4deg);
-    top: -37px;
+  position: absolute;
+  left: -75px;
+  top: -50px;
+  z-index: 3;
+  transform: rotate(-4deg);
 }
 
 .promo-image img {
-  width: 433px;
+  width: 460px;
   height: auto;
-  border-radius: 12px;
+  border-radius: 20px;
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.45);
   transform: translateY(12px);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -47,104 +48,121 @@
 
 .promo-image:hover img {
   transform: translateY(0px) scale(1.03);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.55);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.55);
 }
 
-/* Text content */
+/* TEXT SECTION */
 .promo-content {
   flex: 1;
-  min-width: 250px;
-  margin-left: 300px;
+  min-width: 260px;
+  margin-left: 330px;
+  max-width: 430px;
 }
 
 .promo-text {
-  font-size: 1.25rem;
-  line-height: 1.6;
-  color: #e2e2e2;
-  letter-spacing: 0.2px;
-  max-width: 450px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.45rem;
+  font-weight: 600;
+  line-height: 1.45;
+  color: #ffffff;
 }
 
-/* Offer section */
+.promo-text1 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.45rem;
+  line-height: 1.45;
+  color: #ffffff;
+}
+
+/* RIGHT-SIDE OFFER BOX */
 .promo-offer {
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 22px;
 }
 
 .divider {
-  width: 1px;
-  height: 180px;
-  background-color: #ffffff96;
-}
-
-.vault-logo {
-  width: 124px;
+  width: 2px;
+  height: 160px;
+  background-color: #ffffff25;
+  border-radius: 2px;
 }
 
 .offer-details {
   text-align: center;
 }
 
-.offer-details h4 {
-  font-size: 1.05rem;
-  margin: 0;
-  letter-spacing: 0.3px;
-  line-height: 22px;
-}
-
+/* Support the Cause Title */
 .offer-details p {
-  font-size: 0.9rem;
-  margin: 20px 0 12px;
+  margin: 0 0 22px;
   color: #fff;
-  line-height: 20px;
+  line-height: 1.3;
+  font-family: "Instrument Serif", serif;
+  font-size: 2.2rem;
+  font-weight: 600;
 }
 
+/* BUTTON */
 .btn-stream {
   display: inline-block;
-  background: linear-gradient(90deg, #c9361a, #ff6347);
+  background: #eb31b3;
   color: #fff;
-  padding: 9px 22px;
-  border-radius: 25px;
+  padding: 12px 28px;
+  border-radius: 30px;
   font-weight: 600;
   text-decoration: none;
-  transition: background 0.3s ease;
+  font-size: 1rem;
+  transition: 0.25s ease-in-out;
 }
 
 .btn-stream:hover {
-  background: linear-gradient(90deg, #ff5a3c, #b52700);
+  background: #c1208e;
 }
 
+/* SMALL TERMS */
 .offer-details small {
   display: block;
-  margin-top: 8px;
-  font-size: 0.75rem;
-  color: #999;
+  margin-top: 10px;
+  font-size: 0.78rem;
+  color: #aaa;
 }
 
-.sevendays {
-    font-size: 20px !important;
-    line-height: 28px !important;
+.text-center {
+  text-align: center;
 }
+  .mt0 {
+    margin-top: 0px !important;
+  }
 
-/* Responsive */
+  .mb0 {
+    margin-bottom: 0px !important;
+  }
+
+/* RESPONSIVE */
 @media (max-width: 900px) {
   .history-vault-promo {
     flex-direction: column;
     text-align: center;
-    padding: 50px 30px;
+    padding: 70px 30px;
   }
 
   .promo-image {
-    position: absolute;
-    transform: rotate(-3deg);
-    margin-bottom: 20px;
-    top: -70px;
-    left: 35px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-3deg);
+    top: -90px;
+  }
+
+  .promo-image img {
+    width: 300px;
   }
 
   .promo-content {
     margin-left: 0;
+    margin-top: 150px;
+  }
+
+  .promo-text {
+    margin-top: 20px;
   }
 
   .promo-offer {
@@ -154,48 +172,44 @@
   .divider {
     display: none;
   }
-
-  .promo-image img {
-      width: 280px;
-  }
-
-  .promo-text {
-    margin: 30% 0 0 0;
 }
-}
-
   </style>
 </head>
+
 <body>
+
 <section class="history-vault-promo">
+
+  <!-- LEFT IMAGE -->
   <div class="promo-image">
-    <img
-      src="https://res.cloudinary.com/aenetworks/image/upload/c_fill,ar_1.7777777777777777,w_828,h_466,g_auto/dpr_auto/f_auto/q_auto:eco/v1/2019-hvault-world-war-ii-16x9-1024x576-1?_a=BAVAZGID0"
-      alt="WWII soldiers"
-    />
+    <img src="https://herwiki.org/wp-content/uploads/Untitled-design-2.png" alt="HerWiki Book Promo" />
   </div>
 
+  <!-- CENTER CONTENT -->
   <div class="promo-content">
-    <p class="promo-text">
-      Stream World War II series and specials commercial-free in HISTORY Vault.
+    <p class="promo-text text-center  mb0">
+      You Stand On Her Shoulders:<br>
+    </p>
+
+    <p class="promo-text1 text-center mt0">
+      50 Women Inventors and Pioneers the Patriarchy Doesn’t Want You to Know About
     </p>
   </div>
 
+  <!-- RIGHT SIDE OFFER -->
   <div class="promo-offer">
     <div class="divider"></div>
-    <img
-      src="https://res.cloudinary.com/aenetworks/image/upload/c_fill,w_125,h_178,g_auto/v1/logo_1_kqmlbr?_a=BAVAZGID0"
-      alt="History Vault Logo"
-      class="vault-logo"
-    />
+
     <div class="offer-details">
-      <p class="sevendays">7-DAY <br />FREE TRIAL</p>
-      <p>Commercial-free,<br />Cancel anytime</p>
-      <a href="https://www.historyvault.com/" target="_blank" class="btn-stream">
-        Stream Now →
+      <p>Support the<br>Cause</p>
+
+      <a href="#" target="_blank" class="btn-stream">
+        Grab Your Copy
       </a>
+
       <small>Exclusions & terms apply</small>
     </div>
+
   </div>
 </section>
 

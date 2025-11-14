@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>History Vault Promo Section</title>
+  <style>
+/* Font import (for modern, clean look similar to History.com) */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+
+/* General Layout */
+.history-vault-promo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /*background: linear-gradient(140deg, #979797 5%, #1E1E1E, #000000);*/
+  background: #000;
+  color: #fff;
+  border-radius: 20px;
+  padding: 30px 60px 30px 120px; /* increased height spacing */
+  gap: 40px;
+  max-width: 1100px;
+  margin: 80px auto;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  overflow: visible;
+  flex-wrap: wrap;
+  font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Image section */
+.promo-image {
+    position: absolute;
+    left: -65px;
+    z-index: 3;
+    transform: rotate(-4deg);
+    top: -37px;
+}
+
+.promo-image img {
+  width: 433px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.45);
+  transform: translateY(12px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.promo-image:hover img {
+  transform: translateY(0px) scale(1.03);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.55);
+}
+
+/* Text content */
+.promo-content {
+  flex: 1;
+  min-width: 250px;
+  margin-left: 300px;
+}
+
+.promo-text {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: #e2e2e2;
+  letter-spacing: 0.2px;
+  max-width: 450px;
+}
+
+/* Offer section */
+.promo-offer {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.divider {
+  width: 1px;
+  height: 180px;
+  background-color: #ffffff96;
+}
+
+.vault-logo {
+  width: 124px;
+}
+
+.offer-details {
+  text-align: center;
+}
+
+.offer-details h4 {
+  font-size: 1.05rem;
+  margin: 0;
+  letter-spacing: 0.3px;
+  line-height: 22px;
+}
+
+.offer-details p {
+  font-size: 0.9rem;
+  margin: 20px 0 12px;
+  color: #fff;
+  line-height: 20px;
+}
+
+.btn-stream {
+  display: inline-block;
+  background: linear-gradient(90deg, #c9361a, #ff6347);
+  color: #fff;
+  padding: 9px 22px;
+  border-radius: 25px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn-stream:hover {
+  background: linear-gradient(90deg, #ff5a3c, #b52700);
+}
+
+.offer-details small {
+  display: block;
+  margin-top: 8px;
+  font-size: 0.75rem;
+  color: #999;
+}
+
+.sevendays {
+    font-size: 20px !important;
+    line-height: 28px !important;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .history-vault-promo {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 30px;
+  }
+
+  .promo-image {
+    position: absolute;
+    transform: rotate(-3deg);
+    margin-bottom: 20px;
+    top: -70px;
+    left: 35px;
+  }
+
+  .promo-content {
+    margin-left: 0;
+  }
+
+  .promo-offer {
+    flex-direction: column;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  .promo-image img {
+      width: 280px;
+  }
+
+  .promo-text {
+    margin: 30% 0 0 0;
+}
+}
+
+  </style>
+</head>
+<body>
+<section class="history-vault-promo">
+  <div class="promo-image">
+    <img
+      src="https://herwiki.org/wp-content/uploads/Untitled-design-2.png"
+      alt="WWII soldiers"
+    />
+  </div>
+
+  <div class="promo-content">
+    <p class="promo-text">
+      Stream World War II series and specials commercial-free in HISTORY Vault.
+    </p>
+  </div>
+
+  <div class="promo-offer">
+    <div class="divider"></div>
+    <!-- <img
+      src="https://res.cloudinary.com/aenetworks/image/upload/c_fill,w_125,h_178,g_auto/v1/logo_1_kqmlbr?_a=BAVAZGID0"
+      alt="History Vault Logo"
+      class="vault-logo"
+    /> -->
+    <div class="offer-details">
+      <!-- <p class="sevendays">7-DAY <br />FREE TRIAL</p> -->
+      <p>Support the <br />Cause</p>
+      <a href="https://www.historyvault.com/" target="_blank" class="btn-stream">
+        <!-- Stream Now → -->
+        Grab Your Copy
+      </a>
+      <small>Exclusions & terms apply</small>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
